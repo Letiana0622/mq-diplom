@@ -1,611 +1,366 @@
-header, section, aside, footer {
-    margin: 0;
-    color: #ffffff;
-}
-
-@font-face {
-    font-family: "OpenSans-Bold";
-    src: url("../fonts/OpenSans-Bold.ttf") format("ttf"),
-    url("../fonts/OpenSans-Bold.woff") format("woff"),
-    url("../fonts/OpenSans-Bold.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "OpenSans-Regular";
-    src: url("../fonts/OpenSans-Regular.ttf") format("ttf"),
-    url("../fonts/OpenSans-Regular.woff") format("woff"),
-    url("../fonts/OpenSans-Regular.woff2") format("woff2");
-}
-
-main {
-    background: #ffffff;
-    font-family: OpenSans-Bold;
-}
-
-.header {
-    position: relative;
-    background-image: url(../images/banner-bg.jpg);
-    background-color: #000000;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    z-index: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    gap: 3rem;
-    padding-top: 2rem;
-    margin: 0;
-    min-height: 28rem;
-}
-
-.header::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: #000000;
-    opacity: 0.45;
-    z-index: -1;
-}
-
-.logo_menu{
-    display: flex;
-    gap: 23rem;
-    padding: 0;
-    margin-left: 15rem;
-    margin-bottom: 0;
-}
-
-.logo_svg{
-    width: 12rem;
-    height: 2.3rem;
-    padding: 0;
-    margin: 0;
-}
-
-.nav{
-    list-style-type: none;
-    padding: 0;
-    margin-top: 1rem;
-    max-height: 1rem;
-}
-
-.nav_item{
-    margin-right: 2rem;
-    font-size: 0.8rem;
-    font-family: OpenSans-Regular;
-}
-
-.title{
-    margin: 0;
-    padding: 0;
-    min-width: 48rem;
-}
-
-.title_h1{
-    text-align: center;
-    font-size: 2.8125rem;
-    line-height: 4.5rem;
-    word-break: break-all;
-    margin-left: 2.5rem;
-}
-
-.hero {
-    padding:0;
-    margin-top: 3.75rem;
-    margin-bottom: 3.875rem;
-}
-
-.hero_header{
-    text-align: center;
-    font-size: 1.25rem;
-    color: #000000;
-}
-
-.sublime{
-    border: 0.1rem solid #b59f5b;
-    width: 4rem;
-}
-
-.hero_content{
-    margin-top: 1.4375rem;
-}
-
-.hero_post{
-    padding: 1.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-end;
-}
-
-.hero_post_header{
-    display: flex;
-    flex-wrap: wrap;
-    border: 0.2rem solid #b59f5b;
-    padding: 1.875rem;
-}
-
-.hero_post_title{
-    color: #ffffff;
-    font-size: 1.25rem;
-}
-
-.post_1{
-    position: relative;
-    background-image: url(../images/trend1.jpg);
-    background-color: #000000;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin-right: 0.4rem;
-    z-index: 0;
-}
-
-.post_1::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: #000000;
-    opacity: 0.45;
-    z-index: -1;
-}
-
-.post_2{
-    position: relative;
-    background-image: url(../images/trend2.jpg);
-    background-color: #000000;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin-right: 0.4rem;
-    z-index: 0;
-}
-
-.post_2::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: #000000;
-    opacity: 0.45;
-    z-index: -1;
-}
-
-.post_3{
-    position: relative;
-    background-image: url(../images/trend3.jpg);
-    background-color: #000000;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin-right: 0.4rem;
-    z-index: 0;
-}
-
-.post_3::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: #000000;
-    opacity: 0.45;
-    z-index: -1;
-}
-.post_4{
-    position: relative;
-    background-image: url(../images/trend4.jpg);
-    background-color: #000000;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    z-index: 0;
-}
-
-.post_4::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: #000000;
-    opacity: 0.45;
-    z-index: -1;
-}
-
-.content_post{
-    margin-bottom: 3.5rem;
-    color: #000000;
-}
-
-.post_photo{
-    margin-right: 1.8125rem;
-}
-
-.post_body{
-
-}
-
-.labels{
-    list-style-type: none;
-    padding: 0;
-}
-
-.date_author{
-    list-style-type: none;
-    padding: 0;
-}
-
-.label{
-    margin-right: 2rem;
-    margin-left: 0;
-    font-size: 0.875rem;
-    color: #b59f5b;
-}
-
-.post_title{
-    color: #000000;
-    font-size: 1.25rem;
-}
-
-.date{
-    margin-right: 2rem;
-    margin-left: 0;
-    font-size: 0.75rem;
-    color: #888888;
-    font-family: OpenSans-Regular;
-}
-
-.author{
-    margin-right: 2rem;
-    margin-left: 0;
-    font-size: 0.75rem;
-}
-
-.post_content{
-    font-family: OpenSans-Regular;
-    font-size: 0.9375rem;
-}
-
-.container{
-    display: flex;
-}
-
-.content {
-    flex: 1;
-    flex-wrap: wrap;
-}
-
-.sidebar {
-    flex: 0 1 300px;
-    margin-left: 7.5rem;
-}
-
-.latest_posts{
-    margin-bottom: 3.4rem;
-}
-
-.latest_posts_content{
-    margin-top: 1.4375rem;
-}
-
-.latest_posts_header{
-    font-size: 0.875rem;
-    text-align: center;
-    color: #000000;
-}
-
-.latest_post{
-    margin-bottom: 1.4375rem;
-}
-
-.latest{
-    font-size: 0.875rem;
-}
-
-.latest_date{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.search{
-    background: #000000;
-    padding: 0;
-    margin-bottom: 3.4rem;
-}
-
-.form_search{
-    background: #000000;
-    padding: 0;
-    display: flex;
-}
-
-.field_search{
-    background: #E8E8E8;
-    flex:1;
-    padding: 1.1rem;
-    font-size: 0.8rem;
-    border: none;
-    outline: none;
-    margin: 0;
-}
-
-.button_search{
-    flex: 0 1 3rem;
-    background: #b59f5b;
-    background-image: url("../svg/search.svg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 40% 40%;
-    border: none;
-    outline: none;
-    margin: 0;
-}
-
-.subscribe{
-    padding: 0;
-    margin-bottom: 3.4rem;
-}
-
-.subscribe_header{
-    font-size: 0.875rem;
-    text-align: center;
-    color: #000000;
-}
-
-.form_subscribe {
-    margin-top: 1.4375rem;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.field_subscribe{
-    flex: 1;
-    background: #E8E8E8;
-    padding: 1.1rem;
-    font-size: 0.8rem;
-    border: none;
-    outline: none;
-    margin-bottom: 1.25rem;
-}
-
-.button_subscribe{
-    flex: 1;
-    background: #b59f5b;
-    border: none;
-    outline: none;
-    padding: 1rem;
-    margin: 0;
-    color: #ffffff;
-    font-size: 0.875rem;
-    font-family: OpenSans-Bold;
-}
-
-.tags{
-    margin-bottom: 3.4rem;
-}
-
-.tags_header{
-    font-size: 0.875rem;
-    text-align: center;
-    color: #000000;
-}
-
-.tags_container{
-    margin-top: 1.4375rem;
-    display: flex;
-    flex-wrap: wrap;
-    background: #ffffff;
-}
-
-.tag{
-    background: #ffffff;
-    border: 0.2rem solid #D3D3D3;
-    font-size: 0.75rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
-    color: #000000;
-
-
-}
-
-.categories{
-
-}
-
-.categories_header{
-    font-size: 0.875rem;
-    text-align: center;
-    color: #000000;
-}
-
-.categories_container{
-    margin-top: 1.4375rem;
-    background: #ffffff;
-    padding: 0;
-}
-
-.category{
-    width: 100%;
-    background: #ffffff;
-    border-bottom: 0.1rem solid #D3D3D3;
-    color: #000000;
-    font-size: 0.875rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.count{
-    color: #b59f5b;
-    vertical-align: super;
-}
-
-.bottom_bar {
-    margin: 0;
-    padding: 0;
-}
-
-.shop_header{
-    text-align: center;
-    font-size: 1.25rem;
-    font-family: OpenSans-Bold;
-    color: #000000;
-
-}
-
-.content_shop{
-    margin-top: 1.4375rem;
-    display: flex;
-    gap: 7.25rem;
-    flex: 1 1 0;
-    width: 0;
-    color: #000000;
-    margin: 0;
-    padding-left: 2rem;
-}
-
-.shop_post{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    gap: 0;
-    margin: 0;
-    padding: 0;
-}
-
-.shop_photo{
-    margin: 0;
-    padding: 0;
-}
-
-.shop_body{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    align-content: flex-start;
-    border: 0.2rem solid #b59f5b;
-    min-height: 12rem;
-    margin-top: -2rem;
-    margin-left: -1rem;
-    margin-right: -1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 3.4rem;
-    padding-bottom: 1.5rem;
-}
-
-.shop_post_title{
-    margin: 0;
-    padding: 0;
-}
-
-.shop_post_content{
-    margin: 0;
-    padding: 0;
-    font-family: OpenSans-Regular;
-}
-
-.shop_link{
-    color: #b59f5b;
-}
-
-.shop_post_footer{
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.prices{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-.price_regular{
-    font-size: 0.875rem;
-    text-decoration: line-through;
-}
-
-.price_discounted{
-    font-size: 1.25rem;
-}
-
-.button_shop{
-    flex: 1;
-    background: #b59f5b;
-    border: none;
-    outline: none;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    padding-left: 1.625rem;
-    padding-right: 1.625rem;
-    margin: 0;
-    color: #ffffff;
-    font-size: 0.875rem;
-    font-family: OpenSans-Bold;
-    margin-left: 5.8rem;
-}
-
-footer {
-}
-
-.social{
-    margin-top: 3rem;
-    margin-left: 1rem;
-    background: #E8E8E8;
-    display: flex;
-    gap: 1.75rem;
-    justify-content: center;
-    padding-top: 1.8rem;
-    padding-bottom: 1.8rem;
-}
-
-.dribbble{
-    width: 1.4rem;
-    height: 1.4rem;
-}
-
-.pinterest{
-    width: 1.4rem;
-    height: 1.4rem;
-}
-
-.tumblr{
-    width: 1.4rem;
-    height: 1.4rem;
-}
-
-.copyright{
-    text-align: center;
-    font-size: 0.75rem;
-    color: #999999;
-    padding-top: 4.5rem;
-    padding-bottom: 2.8rem;
-
-}
-
-.wrapper_main {
-    margin: auto;
-    max-width: 73rem;
-    padding: 0;
-}
-
-.wrapper_header {
-    margin: auto;
-    max-width: 43rem;
-}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MQ diploma</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <!-- Header -->
+        <header class="header">
+            <div class="logo_menu">
+                <img src="svg/noemi-logo.svg" class="logo_svg" alt="Лого"/>
+                <ul class="nav container">
+                    <li class="nav_item">ГЛАВНАЯ</li>
+                    <li class="nav_item">ПОСТЫ</li>
+                    <li class="nav_item">СТАТЬИ</li>
+                    <li class="nav_item">ТЭГИ</li>
+                    <li class="nav_item">ТЕМЫ</li>
+                    <li class="nav_item">КОНТАКТЫ</li>
+                </ul>
+            </div>
+            <div class="title wrapper_header">
+                <h1 class="title_h1">БЛОГ О ТВОРЧЕСТВЕ, СПОРТЕ, И ОБРАЗЕ ЖИЗНИ</h1>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero_header">СЕЙЧАС В ТРЕНДЕ</div>
+            <hr class="sublime">
+            <div class="hero_content container">
+                <div class="hero_post post_1">
+                    <div class="hero_post_header">
+                        <ul class="labels container">
+                            <li class="label">LIFESTYLE</li>
+                            <li class="label">INTERIOR</li>
+                        </ul>
+                    <div class="hero_post_title">СЕЙЧАС В ТРЕНДЕ: САД НА ПОДОКОННИКЕ</div>
+                    </div>
+                </div>
+                <div class="hero_post post_2">
+                    <div class="hero_post_header">
+                        <ul class="labels container">
+                            <li class="label">FOOD</li>
+                        </ul>
+                        <div class="hero_post_title">СЫРЫ НА КРАСИВЫХ КАРТИНКАХ ИЗ ИНТЕРНЕТА: КАКИЕ ОНИ НА ВКУС?</div>
+                    </div>
+                </div>
+                <div class="hero_post post_3">
+                    <div class="hero_post_header">
+                        <ul class="labels container">
+                            <li class="label">LIFESTYLE</li>
+                            <li class="label">TRAVEL</li>
+                        </ul>
+                        <div class="hero_post_title">СОБИРАЕМСЯ В ПЕРВЫЙ ПОХОД В ГОРЫ</div>
+                    </div>
+                </div>
+                <div class="hero_post post_4">
+                    <div class="hero_post_header">
+                        <ul class="labels container">
+                            <li class="label">FOOD</li>
+                            <li class="label">HEALTH</li>
+                        </ul>
+                        <div class="hero_post_title">СЕЙЧАС В ТРЕНДЕ: СКОЛЬКО ВИТАМИНА С В ЛИМОНАХ?</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container wrapper_main">
+            <!-- Content -->
+            <section class="content">
+                <div class="content_post container">
+                    <div class="post_photo">
+                        <img src="images/last-post1.jpg" class="content_photo" alt="Фото публикации">
+                    </div>
+                    <div class="post_body">
+                        <ul class="labels container">
+                            <li class="label">TRAVEL</li>
+                            <li class="label">HEALTH</li>
+                        </ul>
+                        <div class="post_title ">10 МЕСТ, РАДИ КОТОРЫХ СТОИТ ПРОСНУТЬСЯ НА PACСВЕТЕ</div>
+                        <ul class="date_author container">
+                            <li class="date">10 июня 2019</li>
+                            <li class="author">Неизвестный автор</li>
+                        </ul>
+                        <div class="post_content">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города...Музеи еще закрыты. Что посмотреть?</div>
+                    </div>
+                </div>
+                <div class="content_post container">
+                    <div class="post_photo">
+                        <img src="images/last-post2.jpg" class="content_photo" alt="Фото публикации">
+                    </div>
+                    <div class="post_body">
+                        <ul class="labels container">
+                            <li class="label">HEALTH</li>
+                            <li class="label">LIFESTYLE</li>
+                        </ul>
+                        <div class="post_title">ИОГА ДЛЯ НАЧИНАЮЩИХ В ДОМАШНИХ УСЛОВИЯХ</div>
+                        <ul class="date_author container">
+                            <li class="date">10 июня 2019</li>
+                            <li class="author">Неизвестный автор</li>
+                        </ul>
+                        <div class="post_content">Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.</div>
+                    </div>
+                </div>
+                <div class="content_post container">
+                    <div class="post_photo">
+                        <img src="images/last-post3.jpg" class="content_photo" alt="Фото публикации">
+                    </div>
+                    <div class="post_body">
+                        <ul class="labels container">
+                            <li class="label">MUSIC</li>
+                        </ul>
+                        <div class="post_title">ЛУЧШИЕ МУЗЫКАЛЬНЫЕ ФЕСТИВАЛИ ЭТОГО ЛЕГА</div>
+                        <ul class="date_author container">
+                            <li class="date">10 июня 2019</li>
+                            <li class="author">Неизвестный автор</li>
+                        </ul>
+                        <div class="post_content">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?
+
+                            Мы составили список лучших музыкальных фестивалей по всему миру.</div>
+                    </div>
+                </div>
+                <div class="content_post container">
+                    <div class="post_photo">
+                        <img src="images/last-post4.jpg" class="content_photo" alt="Фото публикации">
+                    </div>
+                    <div class="post_body">
+                        <ul class="labels container">
+                            <li class="label">LIFESTYLE</li>
+                            <li class="label">FOOD</li>
+                        </ul>
+                        <div class="post_title">НАУКОЁМКИЙ ПОДХОД К КУЛИНАРИИ</div>
+                        <ul class="date_author container">
+                            <li class="date">10 июня 2019</li>
+                            <li class="author">Неизвестный автор</li>
+                        </ul>
+                        <div class="post_content">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</div>
+                    </div>
+                </div>
+                <div class="content_post container">
+                    <div class="post_photo">
+                        <img src="images/last-post5.jpg" class="content_photo" alt="Фото публикации">
+                    </div>
+                    <div class="post_body">
+                        <ul class="labels container">
+                            <li class="label">LIFESTYLE</li>
+                            <li class="label">INTERIOR</li>
+                            <li class="label">ART</li>
+                        </ul>
+                        <div class="post_title">ДЕЛАЕМ МОДНЫЕ ПРИНТЫ НА ПОДУШКАХ ДЛЯ ИНТЕРЬЕРЕ</div>
+                        <ul class="date_author container">
+                            <li class="date">10 июня 2019</li>
+                            <li class="author">Неизвестный автор</li>
+                        </ul>
+                        <div class="post_content">Подушки для дивана целесобразнее заказывать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="latest_posts">
+                    <div class="latest_posts_header">НОВЫЕ ПОСТЫ</div>
+                    <hr class="sublime">
+                    <div class="latest_posts_content">
+                        <div class="content_post latest_post container">
+                            <div class="post_photo">
+                                <img src="images/2.jpg" class="latest_photo1" alt="Фото публикации">
+                            </div>
+                            <div class="post_body">
+                                <ul class="date_author container latest_date">
+                                    <li class="date">10 июня 2019</li>
+                                </ul>
+                                <div class="post_title latest">10 МЕСТ, РАДИ КОТОРЫХ СТОИТ ПРОСНУТЬСЯ НА PACСВЕТЕ</div>
+                            </div>
+                        </div>
+                        <div class="content_post latest_post container">
+                            <div class="post_photo">
+                                <img src="images/151.jpg" class="latest_photo2" alt="Фото публикации">
+                            </div>
+                            <div class="post_body">
+                                <ul class="date_author container latest_date">
+                                    <li class="date">10 июня 2019</li>
+                                </ul>
+                                <div class="post_title latest">ИОГА ДЛЯ НАЧИНАЮЩИХ В ДОМАШНИХ УСЛОВИЯХ</div>
+                            </div>
+                        </div>
+                        <div class="content_post latest_post container">
+                            <div class="post_photo">
+                                <img src="images/45.jpg" class="latest_photo3" alt="Фото публикации">
+                            </div>
+                            <div class="post_body">
+                                <ul class="date_author container latest_date">
+                                    <li class="date">10 июня 2019</li>
+                                </ul>
+                                <div class="post_title latest">КАК МЫ ПРЕВРАТИЛИ КЛАССНОЕ МЕСТО В БАЛКОН</div>
+                            </div>
+                        </div>
+                        <div class="content_post latest_post container">
+                            <div class="post_photo">
+                                <img src="images/501.jpg" class="latest_photo4" alt="Фото публикации">
+                            </div>
+                            <div class="post_body">
+                                <ul class="date_author container latest_date">
+                                    <li class="date">10 июня 2019</li>
+                                </ul>
+                                <div class="post_title latest">НАУКОЁМКИЙ ПОДХОД К КУЛИНАРИИ</div>
+                            </div>
+                        </div>
+                        <div class="content_post latest_post container">
+                            <div class="post_photo">
+                                <img src="images/7.jpg" class="latest_photo5" alt="Фото публикации">
+                            </div>
+                            <div class="post_body">
+                                <ul class="date_author container latest_date">
+                                    <li class="date">10 июня 2019</li>
+                                </ul>
+                                <div class="post_title latest">ЛУЧШИЕ ПРИЧЕСКИ ДЛЯ РАСПУЩЕННЫХ ВОЛОС</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <form class="form_search">
+                        <input class="field_search" type="text" name="query" placeholder="Найти..." required>
+                        <button class="button_search" type="submit"></button>
+                    </form>
+                </div>
+                <div class="subscribe">
+                    <div class="subscribe_header">РАССЫЛКА</div>
+                    <hr class="sublime">
+                    <form class="form_subscribe">
+                        <input class="field_subscribe" type="text" name="query" placeholder="Ваш email-адрес" required>
+                        <button class="button_subscribe" type="submit">ПОДПИСАТЬСЯ</button>
+                    </form>
+
+                </div>
+                <div class="tags">
+                    <div class="tags_header">ТЭГИ</div>
+                    <hr class="sublime">
+                    <ul class="labels tags_container">
+                        <li class="label tag">FASHION</li>
+                        <li class="label tag">MUSIC</li>
+                        <li class="label tag">LIFESTYLE</li>
+                        <li class="label tag">ART</li>
+                        <li class="label tag">INTERIOR</li>
+                        <li class="label tag">TRAVEL</li>
+                        <li class="label tag">FOOD</li>
+                        <li class="label tag">HEALTH</li>
+                    </ul>
+                </div>
+                <div class="categories">
+                    <div class="categories_header">ТЕМЫ</div>
+                    <hr class="sublime">
+                    <ul class="labels categories_container">
+                        <li class="label category">
+                            <span>Красота</span>
+                            <span class="count"> 12</span>
+                        </li>
+                        <li class="label category">
+                            <span>Здоровье</span>
+                            <span class="count"> 4</span>
+                        </li>
+                        <li class="label category">
+                            <span>Образ жизни</span>
+                            <span class="count"> 145</span>
+                        </li>
+                        <li class="label category">
+                            <span>Музыка</span>
+                            <span class="count"> 28</span>
+                        </li>
+                        <li class="label category">
+                            <span>Спорт</span>
+                            <span class="count"> 62</span>
+                        </li>
+                        <li class="label category">
+                            <span>Йога</span>
+                            <span class="count"> 8</span>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <section class="bottom_bar wrapper_main">
+            <div class="shop_header">НАШИ ИЗДЕЛИЯ</div>
+            <hr class="sublime">
+            <section class="content_shop container">
+                <div class="shop_post shop_post1">
+                    <div class="shop_photo">
+                        <img src="images/shop-item-desk1.jpg" class="shop_photo1" alt="Фото магазина">
+                    </div>
+                    <div class="shop_body">
+                        <div class="shop_post_title ">ПОДУШКА НА ДИВАН</div>
+                        <div class="shop_post_content">
+                            <span>Набор из двух подушек с модными принтами. Видео о создании </span>
+                            <span class="shop_link">здесь</span>
+                            <span>.</span>
+                        </div>
+                        <div class="shop_footer container">
+                            <ul class="prices">
+                                <li class="price_regular">1000 Р</li>
+                                <li class="price_discounted">800 Р</li>
+                            </ul>
+                            <button class="button_shop" type="submit">В МАГАЗИН</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_post shop_post2">
+                    <div class="shop_photo">
+                        <img src="images/shop-item-desk2.jpg" class="shop_photo2" alt="Фото магазина">
+                    </div>
+                    <div class="shop_body">
+                        <div class="shop_post_title">КУКЛА "ЗАЙЧИК"</div>
+                        <div class="shop_post_content">
+                            <span>Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена </span>
+                            <span class="shop_link">весенняя серия постов</span>
+                            <span>в блоге и несколько подкастов.</span>
+                        </div>
+                        <div class="shop_footer container">
+                            <ul class="prices">
+                                <li class="price_regular"></li>
+                                <li class="price_discounted">3500 Р</li>
+                            </ul>
+                            <button class="button_shop" type="submit">В МАГАЗИН</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop_post shop_post3">
+                    <div class="shop_photo">
+                        <img src="images/shop-item-desk3.jpg" class="shop_photo3" alt="Фото магазина">
+                    </div>
+                    <div class="shop_body">
+                        <div class="shop_post_title">ШЕСТИУГОЛЬНАЯ РАМКА</div>
+                        <div class="shop_post_content">
+                            <span>Необычная рамка для украшения дома из видео </span>
+                            <span class="shop_link">"Как сделать рамку из подручных средств за 30 минут"</span>
+                        </div>
+                        <div class="shop_footer container">
+                            <ul class="prices">
+                                <li class="price_regular">500 Р</li>
+                                <li class="price_discounted">400 Р</li>
+                            </ul>
+                            <button class="button_shop" type="submit">В МАГАЗИН</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- Footer -->
+        <footer class="footer wrapper_main">
+            <div class="social container">
+                <img src="svg/001-dribbble.svg" class="dribbble" alt="Лого"/>
+                <img src="svg/002-pinterest.svg" class="pinterest" alt="Лого"/>
+                <img src="svg/003-tumblr.svg" class="tumblr" alt="Лого"/>
+            </div>
+            <div class="copyright">Copyright © 2009–2019 City Blog LLC.</div>
+        </footer>
+
+    </main>
+</body>
+</html>
