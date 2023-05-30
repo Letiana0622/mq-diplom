@@ -1,15 +1,611 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MQ diploma</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
- <h1>Привет мир!</h1>
-    <h2>Hello<h2/>
-</body>
-</html>
+header, section, aside, footer {
+    margin: 0;
+    color: #ffffff;
+}
+
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url("../fonts/OpenSans-Bold.ttf") format("ttf"),
+    url("../fonts/OpenSans-Bold.woff") format("woff"),
+    url("../fonts/OpenSans-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url("../fonts/OpenSans-Regular.ttf") format("ttf"),
+    url("../fonts/OpenSans-Regular.woff") format("woff"),
+    url("../fonts/OpenSans-Regular.woff2") format("woff2");
+}
+
+main {
+    background: #ffffff;
+    font-family: OpenSans-Bold;
+}
+
+.header {
+    position: relative;
+    background-image: url(../images/banner-bg.jpg);
+    background-color: #000000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 3rem;
+    padding-top: 2rem;
+    margin: 0;
+    min-height: 28rem;
+}
+
+.header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.45;
+    z-index: -1;
+}
+
+.logo_menu{
+    display: flex;
+    gap: 23rem;
+    padding: 0;
+    margin-left: 15rem;
+    margin-bottom: 0;
+}
+
+.logo_svg{
+    width: 12rem;
+    height: 2.3rem;
+    padding: 0;
+    margin: 0;
+}
+
+.nav{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+    max-height: 1rem;
+}
+
+.nav_item{
+    margin-right: 2rem;
+    font-size: 0.8rem;
+    font-family: OpenSans-Regular;
+}
+
+.title{
+    margin: 0;
+    padding: 0;
+    min-width: 48rem;
+}
+
+.title_h1{
+    text-align: center;
+    font-size: 2.8125rem;
+    line-height: 4.5rem;
+    word-break: break-all;
+    margin-left: 2.5rem;
+}
+
+.hero {
+    padding:0;
+    margin-top: 3.75rem;
+    margin-bottom: 3.875rem;
+}
+
+.hero_header{
+    text-align: center;
+    font-size: 1.25rem;
+    color: #000000;
+}
+
+.sublime{
+    border: 0.1rem solid #b59f5b;
+    width: 4rem;
+}
+
+.hero_content{
+    margin-top: 1.4375rem;
+}
+
+.hero_post{
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.hero_post_header{
+    display: flex;
+    flex-wrap: wrap;
+    border: 0.2rem solid #b59f5b;
+    padding: 1.875rem;
+}
+
+.hero_post_title{
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+
+.post_1{
+    position: relative;
+    background-image: url(../images/trend1.jpg);
+    background-color: #000000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 0.4rem;
+    z-index: 0;
+}
+
+.post_1::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.45;
+    z-index: -1;
+}
+
+.post_2{
+    position: relative;
+    background-image: url(../images/trend2.jpg);
+    background-color: #000000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 0.4rem;
+    z-index: 0;
+}
+
+.post_2::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.45;
+    z-index: -1;
+}
+
+.post_3{
+    position: relative;
+    background-image: url(../images/trend3.jpg);
+    background-color: #000000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 0.4rem;
+    z-index: 0;
+}
+
+.post_3::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.45;
+    z-index: -1;
+}
+.post_4{
+    position: relative;
+    background-image: url(../images/trend4.jpg);
+    background-color: #000000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 0;
+}
+
+.post_4::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.45;
+    z-index: -1;
+}
+
+.content_post{
+    margin-bottom: 3.5rem;
+    color: #000000;
+}
+
+.post_photo{
+    margin-right: 1.8125rem;
+}
+
+.post_body{
+
+}
+
+.labels{
+    list-style-type: none;
+    padding: 0;
+}
+
+.date_author{
+    list-style-type: none;
+    padding: 0;
+}
+
+.label{
+    margin-right: 2rem;
+    margin-left: 0;
+    font-size: 0.875rem;
+    color: #b59f5b;
+}
+
+.post_title{
+    color: #000000;
+    font-size: 1.25rem;
+}
+
+.date{
+    margin-right: 2rem;
+    margin-left: 0;
+    font-size: 0.75rem;
+    color: #888888;
+    font-family: OpenSans-Regular;
+}
+
+.author{
+    margin-right: 2rem;
+    margin-left: 0;
+    font-size: 0.75rem;
+}
+
+.post_content{
+    font-family: OpenSans-Regular;
+    font-size: 0.9375rem;
+}
+
+.container{
+    display: flex;
+}
+
+.content {
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    flex: 0 1 300px;
+    margin-left: 7.5rem;
+}
+
+.latest_posts{
+    margin-bottom: 3.4rem;
+}
+
+.latest_posts_content{
+    margin-top: 1.4375rem;
+}
+
+.latest_posts_header{
+    font-size: 0.875rem;
+    text-align: center;
+    color: #000000;
+}
+
+.latest_post{
+    margin-bottom: 1.4375rem;
+}
+
+.latest{
+    font-size: 0.875rem;
+}
+
+.latest_date{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.search{
+    background: #000000;
+    padding: 0;
+    margin-bottom: 3.4rem;
+}
+
+.form_search{
+    background: #000000;
+    padding: 0;
+    display: flex;
+}
+
+.field_search{
+    background: #E8E8E8;
+    flex:1;
+    padding: 1.1rem;
+    font-size: 0.8rem;
+    border: none;
+    outline: none;
+    margin: 0;
+}
+
+.button_search{
+    flex: 0 1 3rem;
+    background: #b59f5b;
+    background-image: url("../svg/search.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 40% 40%;
+    border: none;
+    outline: none;
+    margin: 0;
+}
+
+.subscribe{
+    padding: 0;
+    margin-bottom: 3.4rem;
+}
+
+.subscribe_header{
+    font-size: 0.875rem;
+    text-align: center;
+    color: #000000;
+}
+
+.form_subscribe {
+    margin-top: 1.4375rem;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.field_subscribe{
+    flex: 1;
+    background: #E8E8E8;
+    padding: 1.1rem;
+    font-size: 0.8rem;
+    border: none;
+    outline: none;
+    margin-bottom: 1.25rem;
+}
+
+.button_subscribe{
+    flex: 1;
+    background: #b59f5b;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    margin: 0;
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-family: OpenSans-Bold;
+}
+
+.tags{
+    margin-bottom: 3.4rem;
+}
+
+.tags_header{
+    font-size: 0.875rem;
+    text-align: center;
+    color: #000000;
+}
+
+.tags_container{
+    margin-top: 1.4375rem;
+    display: flex;
+    flex-wrap: wrap;
+    background: #ffffff;
+}
+
+.tag{
+    background: #ffffff;
+    border: 0.2rem solid #D3D3D3;
+    font-size: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #000000;
+
+
+}
+
+.categories{
+
+}
+
+.categories_header{
+    font-size: 0.875rem;
+    text-align: center;
+    color: #000000;
+}
+
+.categories_container{
+    margin-top: 1.4375rem;
+    background: #ffffff;
+    padding: 0;
+}
+
+.category{
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 0.1rem solid #D3D3D3;
+    color: #000000;
+    font-size: 0.875rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.count{
+    color: #b59f5b;
+    vertical-align: super;
+}
+
+.bottom_bar {
+    margin: 0;
+    padding: 0;
+}
+
+.shop_header{
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: OpenSans-Bold;
+    color: #000000;
+
+}
+
+.content_shop{
+    margin-top: 1.4375rem;
+    display: flex;
+    gap: 7.25rem;
+    flex: 1 1 0;
+    width: 0;
+    color: #000000;
+    margin: 0;
+    padding-left: 2rem;
+}
+
+.shop_post{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.shop_photo{
+    margin: 0;
+    padding: 0;
+}
+
+.shop_body{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-content: flex-start;
+    border: 0.2rem solid #b59f5b;
+    min-height: 12rem;
+    margin-top: -2rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 3.4rem;
+    padding-bottom: 1.5rem;
+}
+
+.shop_post_title{
+    margin: 0;
+    padding: 0;
+}
+
+.shop_post_content{
+    margin: 0;
+    padding: 0;
+    font-family: OpenSans-Regular;
+}
+
+.shop_link{
+    color: #b59f5b;
+}
+
+.shop_post_footer{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.prices{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.price_regular{
+    font-size: 0.875rem;
+    text-decoration: line-through;
+}
+
+.price_discounted{
+    font-size: 1.25rem;
+}
+
+.button_shop{
+    flex: 1;
+    background: #b59f5b;
+    border: none;
+    outline: none;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 1.625rem;
+    padding-right: 1.625rem;
+    margin: 0;
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-family: OpenSans-Bold;
+    margin-left: 5.8rem;
+}
+
+footer {
+}
+
+.social{
+    margin-top: 3rem;
+    margin-left: 1rem;
+    background: #E8E8E8;
+    display: flex;
+    gap: 1.75rem;
+    justify-content: center;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+}
+
+.dribbble{
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.pinterest{
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.tumblr{
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 0.75rem;
+    color: #999999;
+    padding-top: 4.5rem;
+    padding-bottom: 2.8rem;
+
+}
+
+.wrapper_main {
+    margin: auto;
+    max-width: 73rem;
+    padding: 0;
+}
+
+.wrapper_header {
+    margin: auto;
+    max-width: 43rem;
+}
